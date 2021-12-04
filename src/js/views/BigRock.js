@@ -4,12 +4,12 @@ import useSWR from "swr";
 import { starWarsApiFetch } from "./planets";
 
 export function BigRock() {
-    const params = useParams();
-    const { data } = useSWR("/api/planets/" + params.id, starWarsApiFetch);
+	const params = useParams();
+	const { data } = useSWR("/api/planets/" + params.id, starWarsApiFetch);
 
-    return (
-        <div>
-            <h1>{data && data.result.properties.name}</h1>
-        </div>
-    );
+	return (
+		<div>
+			<h1>{data && data.result.properties.name}</h1>
+		</div>
+	);
 }
