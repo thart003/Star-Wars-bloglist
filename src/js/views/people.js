@@ -12,12 +12,12 @@ throw new Error();
 }
 
 export function People() {
-    const { data, isValidating } = useSWR("/api/planets", starWarsApiFetch);
+    const { data, isValidating } = useSWR("/api/people", starWarsApiFetch);
     return (<div>
-            <h1>planets</h1>
+            <h1>people</h1>
             {data && data.results.map((item, index) => {
                 return (
-                <a key={index} href={"/planet/" + item.uid}> 
+                <a key={index} href={"/people/" + item.uid}> 
                 {item.name}
                 </a>
     );
