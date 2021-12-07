@@ -17,7 +17,7 @@ import TieB from "../../img/tieBomber.jpeg";
 
 export const Car = () => {
 	const params = useParams();
-	const { data } = useSWR("/api/people/" + params.id, starWarsApiFetch);
+	const { data } = useSWR("/api/vehicles/" + params.id, starWarsApiFetch);
 
 	const images = {
 		"1": Sandy,
@@ -40,25 +40,25 @@ export const Car = () => {
 						<img
 							src={
 								data && data.result.properties.name === "Sand Crawler" ? (
-									<img src={images[1]} />
+									images[1]
 								) : data && data.result.properties.name === "X-34 landspeeder" ? (
-									<img src={images[2]} />
+									images[2]
 								) : data && data.result.properties.name === "T-16 skyhopper" ? (
-									<img src={images[3]} />
+									images[3]
 								) : data && data.result.properties.name === "TIE/LN starfighter" ? (
-									<img src={images[4]} />
+									images[4]
 								) : data && data.result.properties.name === "Snowspeeder" ? (
-									<img src={images[5]} />
+									images[5]
 								) : data && data.result.properties.name === "AT-AT" ? (
-									<img src={images[6]} />
+									images[6]
 								) : data && data.result.properties.name === "TIE bomber" ? (
-									<img src={images[7]} />
+									images[7]
 								) : data && data.result.properties.name === "AT-ST" ? (
-									<img src={images[8]} />
+									images[8]
 								) : data && data.result.properties.name === "Storm IV Twin-Pod cloud car" ? (
-									<img src={images[9]} />
+									images[9]
 								) : data && data.result.properties.name === "Sail barge" ? (
-									<img src={images[10]} />
+									images[10]
 								) : (
 									<h1>No Image</h1>
 								)
