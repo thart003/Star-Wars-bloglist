@@ -44,7 +44,7 @@ export function People() {
 									<img src={images[item.uid] || placeholder} className="card-img-top" alt="..." />
 									<div className="card-body">
 										<h5 className="card-title">{item.name}</h5>
-										<a href={"/people/" + item.uid} className="btn btn-primary">
+										<a href={"/person/" + item.uid} className="btn btn-primary">
 											Go Somewhere
 										</a>
 										{favorites.favorites.some(fav => {
