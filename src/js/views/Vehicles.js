@@ -3,23 +3,29 @@ import useSWR from "swr";
 import { starWarsApiFetch } from "./planets";
 import { useFavorites } from "../store/favorites";
 
+import ATAT from "../../img/atat.png";
+import ATST from "../../img/atst.jpg";
+import Landspeeder from "../../img/landspeeder.jpeg";
+import SailBarge from "../../img/SailBarge.jpeg";
+import Sandy from "../../img/sandy.png";
+import SkyHopper from "../../img/skyhopper.png";
+import SnowSpeeder from "../../img/snowspeeder.jpg";
+import StormCloudCar from "../../img/stormCloudCar.png";
+import TieF from "../../img/tie-fighter.jpeg";
+import TieB from "../../img/tieBomber.jpeg";
+
 const placeholder = "https://www.russorizio.com/wp-content/uploads/2016/07/ef3-placeholder-image.jpg";
 const images = {
-	"1": "https://i.pinimg.com/originals/f2/7c/8b/f27c8b2e228ae33fc2eab2df58d506e6.jpg",
-	"2": "https://www.renderhub.com/squir/star-wars-x-34-landspeeder/star-wars-x-34-landspeeder-01.jpg",
-	"3":
-		"https://static.wikia.nocookie.net/starwars/images/e/e1/Lukes_T-16_Skyhopper_TT.png/revision/latest?cb=20170520044701",
-	"4": "https://static.wikia.nocookie.net/swbloodlines/images/3/3f/TIE_Ln.jpg/revision/latest?cb=20180311171411",
-	"5":
-		"https://static.wikia.nocookie.net/starwars/images/4/44/T-47_Speeder_DICE.png/revision/latest?cb=20151106063152",
-	"6":
-		"https://static.turbosquid.com/Preview/2015/12/31__05_03_50/AT_AT_0001.jpg49dc6f99-c24b-4d82-8d32-b6f5c7435af1Original.jpg",
-	"7":
-		"https://static.wikia.nocookie.net/battlefront/images/8/8b/Tie-bomber-hero-sm.jpg/revision/latest?cb=20170824161455",
-	"8":
-		"https://geekandsundry.com/wp-content/uploads/2016/04/star-wars-battlefront-endor-01-at-st-665x385-8htd_1280w.jpg",
-	"9": "https://static.wikia.nocookie.net/starwars/images/3/3b/Cloud-car-v2.png/revision/latest?cb=20160617064429",
-	"10": "https://static.wikia.nocookie.net/starwars/images/8/8c/Sail_Barge.png/revision/latest?cb=20130331043828"
+	"1": Sandy,
+	"2": Landspeeder,
+	"3": SkyHopper,
+	"4": TieF,
+	"5": SnowSpeeder,
+	"6": ATAT,
+	"7": TieB,
+	"8": ATST,
+	"9": StormCloudCar,
+	"10": SailBarge
 };
 
 export function Vehicles() {
