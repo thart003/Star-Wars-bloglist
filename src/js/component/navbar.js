@@ -17,7 +17,7 @@ export const Navbar = () => {
 				<Link to="/vehicles">
 					<span className="navbar-brand mb-0 h1">Vehicles</span>
 				</Link>
-				<Link to="/store/favorites">
+				<Link to="/favorites">
 					<span className="navbar-brand mb-0 h1">
 						<i
 							className="fas fa-star bg-light text-dark rounded p-2"
