@@ -35,7 +35,7 @@ export function People() {
 	return (
 		<div className="container">
 			<div className="row">
-				<h1>people</h1>
+				<h1>Personas</h1>
 				{data &&
 					data.results.map((item, index) => {
 						return (
@@ -47,13 +47,13 @@ export function People() {
 										<a href={"/person/" + item.uid} className="btn btn-primary">
 											Go Somewhere
 										</a>
-										{favorites.favorites.some(fav => {
+										{favorites.favorites.people.some(fav => {
 											return fav.uid === item.uid;
 										}) ? (
 											<button
 												className="btn btn-warning"
 												onClick={() => {
-													favorites.removeFavorite(item);
+													favorites.removeFavorite(item, "people");
 												}}>
 												Remove Favorite
 											</button>
@@ -61,7 +61,7 @@ export function People() {
 											<button
 												className="btn btn-warning"
 												onClick={() => {
-													favorites.addFavorite(item);
+													favorites.addFavorite(item, "people");
 												}}>
 												add favorite
 											</button>

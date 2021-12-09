@@ -4,17 +4,24 @@ import { persist } from "zustand/middleware";
 export const useFavorites = create(
 	persist(
 		set => ({
-			favorites: [],
-
-			addFavorite: favorite => {
-				set(state => ({ favorites: [...state.favorites, favorite] }));
+			favorites: {
+				planets: [],
+				people: [],
+				vehicles: []
 			},
 
-			removeFavorite: favorite => {
+			addFavorite: (favorite, type) => {
+				set(state => ({ favorites: { ...state.favorites, [type]: [...state.favorites[type], favorite] } }));
+			},
+
+			removeFavorite: (favorite, type) => {
 				set(state => ({
-					favorites: state.favorites.filter(item => {
-						return item.uid !== favorite.uid;
-					})
+					favorites: {
+						...state.favorites,
+						[type]: state.favorites[type].filter(item => {
+							return item.uid !== favorite.uid;
+						})
+					}
 				}));
 			}
 		}),

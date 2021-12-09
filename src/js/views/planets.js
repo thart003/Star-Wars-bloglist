@@ -50,13 +50,13 @@ export function Planets() {
 										<a href={"/planets/" + item.uid} className="btn btn-primary">
 											Go Somewhere
 										</a>
-										{favorites.favorites.some(fav => {
+										{favorites.favorites.planets.some(fav => {
 											return fav.uid === item.uid;
 										}) ? (
 											<button
 												className="btn btn-warning"
 												onClick={() => {
-													favorites.removeFavorite(item);
+													favorites.removeFavorite(item, "planets");
 												}}>
 												Remove Favorite
 											</button>
@@ -64,7 +64,7 @@ export function Planets() {
 											<button
 												className="btn btn-warning"
 												onClick={() => {
-													favorites.addFavorite(item);
+													favorites.addFavorite(item, "planets");
 												}}>
 												add favorite
 											</button>
