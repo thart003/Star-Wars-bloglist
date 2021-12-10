@@ -6,6 +6,7 @@ import DropdownItem from "react-bootstrap/DropdownItem";
 
 export const Navbar = () => {
 	const favorites = useFavorites();
+
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
 			<Link to="/">
@@ -31,30 +32,38 @@ export const Navbar = () => {
 						data-bs-toggle="dropdown"
 						aria-bs-toggle="dropdown"
 						aria-expanded="false">
-						Dropdown button
+						Dropdown
 					</button>
 					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li>
-							{favorites.favorites.people.map((favorite, i) => (
-								<a href={"/person/" + favorite.uid} key={i}>
-									{favorite.name}
-								</a>
-							))}
-						</li>
-						<li>
-							{favorites.favorites.planets.map((favorite, i) => (
-								<a href={"/BigRock/" + favorite.uid} key={i}>
-									{favorite.name}
-								</a>
-							))}
-						</li>
-						<li>
-							{favorites.favorites.vehicles.map((favorite, i) => (
-								<a href={"/car/ " + favorite.uid} key={i}>
-									{favorite.name}
-								</a>
-							))}
-						</li>
+						{favorites.favorites.people.map((favorite, i) => {
+							return (
+								<li className="listItem" key={i}>
+									<a href={"/person/" + favorite.uid} key={i}>
+										{favorite.name}
+									</a>
+								</li>
+							);
+						})}
+						;
+						{favorites.favorites.planets.map((favorite, i) => {
+							return (
+								<li className="listItem" key={i}>
+									<a href={"/BigRock/" + favorite.uid} key={i}>
+										{favorite.name}
+									</a>
+								</li>
+							);
+						})}
+						{favorites.favorites.vehicles.map((favorite, i) => {
+							return (
+								<li className="listItem" key={i}>
+									<a href={"/car/ " + favorite.uid} key={i}>
+										{favorite.name}
+									</a>
+								</li>
+							);
+						})}
+						;
 						{favorites.favorites.vehicles.length === 0 &&
 							favorites.favorites.planets.length === 0 &&
 							favorites.favorites.people.length === 0 && <a>There are no favorites</a>}

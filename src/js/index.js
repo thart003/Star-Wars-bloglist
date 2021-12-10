@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 //include your index.scss file into the bundle
-import "../styles/index.scss";
+//import "../styles/index.scss";//scss is not needed in this boilerplate. The boilerplate was updated to use css only.
 
 //import your own components
 import Layout from "./layout";
