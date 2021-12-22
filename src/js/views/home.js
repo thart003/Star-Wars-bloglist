@@ -6,7 +6,7 @@ import { Planets } from "./planets";
 import { Vehicles } from "./Vehicles";
 
 export const Home = () => (
-	<div className="text-center mt-5">
+	<div className="text-center mt-5 home">
 		<Vehicles />
 		<People />
 		<Planets />
