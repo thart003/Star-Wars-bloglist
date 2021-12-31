@@ -1,6 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 import { useFavorites } from "../store/favorites";
+import "../../styles/people.scss";
 
 const placeholder = "https://www.russorizio.com/wp-content/uploads/2016/07/ef3-placeholder-image.jpg";
 
