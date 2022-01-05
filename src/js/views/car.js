@@ -8,9 +8,9 @@ import SandCrawler from "../../img/sandy.png";
 import Landspeeder from "../../img/landspeeder.jpeg";
 import SkyHopper from "../../img/skyhopper.png";
 import TieFighter from "../../img/tie-fighter.jpeg";
-import Snowspeeder from "../../img/snowspeeder.jpg";
+import Snowspeeder from "../../img/SnoWspeeDer.jpeg";
 import AtAt from "../../img/atat.jpeg";
-import TieBomber from "../../img/tieBomber.jpeg";
+import TieBomber from "../../img/TiEB.jpg";
 import AtSt from "../../img/atst.jpg";
 import CloudCar from "../../img/stormCloudCar.png";
 import SailBarge from "../../img/SailBarge.jpeg";
@@ -20,16 +20,16 @@ export const Car = () => {
 	const { data } = useSWR("/api/vehicles/" + params.id, starWarsApiFetch);
 
 	const images = {
-		"1": SandCrawler,
-		"2": Landspeeder,
-		"3": SkyHopper,
-		"4": TieFighter,
-		"5": Snowspeeder,
-		"6": AtAt,
-		"7": TieBomber,
-		"8": AtSt,
-		"9": CloudCar,
-		"10": SailBarge
+		"4": SandCrawler,
+		"7": Landspeeder,
+		"6": SkyHopper,
+		"8": TieFighter,
+		"14": Snowspeeder,
+		"18": AtAt,
+		"16": TieBomber,
+		"19": AtSt,
+		"20": CloudCar,
+		"24": SailBarge
 	};
 
 	return (
@@ -40,25 +40,25 @@ export const Car = () => {
 						<img
 							src={
 								data && data.result.properties.name === "Sand Crawler" ? (
-									images[1]
-								) : data && data.result.properties.name === "X-34 landspeeder" ? (
-									images[2]
-								) : data && data.result.properties.name === "T-16 skyhopper" ? (
-									images[3]
-								) : data && data.result.properties.name === "TIE/LN starfighter" ? (
 									images[4]
-								) : data && data.result.properties.name === "Snowspeeder" ? (
-									images[5]
-								) : data && data.result.properties.name === "AT-AT" ? (
-									images[6]
-								) : data && data.result.properties.name === "TIE bomber" ? (
+								) : data && data.result.properties.name === "X-34 landspeeder" ? (
 									images[7]
-								) : data && data.result.properties.name === "AT-ST" ? (
+								) : data && data.result.properties.name === "T-16 skyhopper" ? (
+									images[6]
+								) : data && data.result.properties.name === "TIE/LN starfighter" ? (
 									images[8]
+								) : data && data.result.properties.name === "Snowspeeder" ? (
+									images[14]
+								) : data && data.result.properties.name === "AT-AT" ? (
+									images[18]
+								) : data && data.result.properties.name === "TIE bomber" ? (
+									images[16]
+								) : data && data.result.properties.name === "AT-ST" ? (
+									images[19]
 								) : data && data.result.properties.name === "Storm IV Twin-Pod cloud car" ? (
-									images[9]
+									images[20]
 								) : data && data.result.properties.name === "Sail barge" ? (
-									images[10]
+									images[24]
 								) : (
 									<h1>No Image</h1>
 								)
