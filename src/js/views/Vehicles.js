@@ -9,14 +9,12 @@ const images = {
 	"7": "https://oakthorne.net/wiki/images/X34-landspeeder.jpg",
 	"6": "https://dnqe9n02rny0n.cloudfront.net/sets/images/11099/75081_alt_2_md.jpg",
 	"8": "https://bbts1.azureedge.net/images/p/full/2021/01/0cbfc29f-020e-479d-98f4-18252af8a8fd.jpg",
-	"14":
-		"https://static.wikia.nocookie.net/starwars/images/4/44/T-47_Speeder_DICE.png/revision/latest?cb=20151106063152",
+	"14": "https://www.metalearth.com/content/images/thumbs/0000369_snowspeedertrade_1200.png",
 	"18": "https://www.denofgeek.com/wp-content/uploads/2016/05/atat-walkers.jpg?fit=620%2C349",
-	"16": "https://static.wikia.nocookie.net/starwars/images/9/9b/TIE_Bomber.jpg/revision/latest?cb=20081012232104",
-	"19":
-		"https://static.wikia.nocookie.net/starwars/images/f/ff/ATST-SWBdice.png/revision/latest/top-crop/width/360/height/360?cb=20151110032640",
+	"16": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-7j-0ynSEWSeSDw0-q5cXwn1XgIwJr0i8Q&usqp=CAU",
+	"19": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnFcZSaJTbsrFdxVBagdS9fyeY9Lqsj89MA&usqp=CAU",
 	"20": "https://m.media-amazon.com/images/I/71xhRX2PQ3L._AC_SX425_.jpg",
-	"24": "https://static.wikia.nocookie.net/starwars/images/a/a5/Eclipsesb.jpg/revision/latest?cb=20060406082922"
+	"24": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu54HofGy5oL0a9RWNvM_y4BXnOscZLUDTiA&usqp=CAU"
 };
 
 export function Vehicles() {

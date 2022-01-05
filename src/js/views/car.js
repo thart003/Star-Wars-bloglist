@@ -24,7 +24,8 @@ export const Car = () => {
 		"7": Landspeeder,
 		"6": SkyHopper,
 		"8": TieFighter,
-		"14": Snowspeeder,
+		"14":
+			"https://static.turbosquid.com/Preview/2020/09/29__04_33_47/snowspeeder.jpg525DE68B-5124-46A9-B9F7-FD5DF7A83296Large.jpg",
 		"18": AtAt,
 		"16": TieBomber,
 		"19": AtSt,
