@@ -47,7 +47,7 @@ export function Planets() {
 									<img src={images[item.uid] || placeholder} className="card-img-top" alt="..." />
 									<div className="card-body">
 										<h5 className="card-title">{item.name}</h5>
-										<a href={"/planets/" + item.uid} className="btn btn-primary">
+										<a href={"/BigRock/" + item.uid} className="btn btn-primary">
 											Go Somewhere
 										</a>
 										{favorites.favorites.planets.some(fav => {

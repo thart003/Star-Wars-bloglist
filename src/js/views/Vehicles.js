@@ -33,7 +33,7 @@ export function Vehicles() {
 									<img src={images[item.uid] || placeholder} className="card-img-top" alt="..." />
 									<div className="card-body">
 										<h5 className="card-title">{item.name}</h5>
-										<a href={"/vehicles/" + item.uid} className="btn btn-primary">
+										<a href={"/car/" + item.uid} className="btn btn-primary">
 											Go Somewhere
 										</a>
 										{favorites.favorites.vehicles.some(fav => {
